@@ -76,7 +76,7 @@ If you successfully pass your exam you will receive an email congratulating you 
 [🏠 Back to Table of Contents](#table-of-contents)
 
 ## 3. Practice questions
-As part of this workshop we have provided a set of 20 practice questions that span DS201, DS220, and DS210 material. These questions use the same style and form you can expect in the actual exams and will give you an idea of what to expect. 
+As part of this workshop we have provided a set of 15 practice questions. These questions use the same style and form you can expect in the actual exams and will give you an idea of what to expect. 
 
 We highly suggest you run through these and test yourself. Each question will have a hidden answer. Try and answer them first before revealing the solution.
 
