@@ -10,7 +10,7 @@ It doesn't matter if you join our workshop live or you prefer to do at your own 
 ### Materials
 
 - [Slide deck for the workshop](./k8ssandra-cert-presentation.pdf)
-- Workshop Recording
+- [Workshop Recording](https://youtu.be/JT1Dljbfmz8)
 - [Discord chat](https://bit.ly/cassandra-workshop)
 - [Questions and Answers](https://community.datastax.com/)
 
