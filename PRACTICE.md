@@ -11,6 +11,16 @@ This section will run you through a set of practice exam questions.  These pract
 
 ### Question 1.
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is ZZZ |
+|:---|
+| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+</p>
+</details>
+[⬆️ Top](#sample-questions)
+
 ### Question 2.
 
 ### Question 3.
