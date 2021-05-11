@@ -135,12 +135,26 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 6.
 
+Which Docker commands create a Docker network and run Cassandra in a container using that network?
+
+**A.** `docker network create d-net`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`docker run --network d-net cassandra`
+
+**B.** `docker network start d-net`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`docker run --network d-net cassandra`
+
+**C.** `docker network create d-net`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`docker run d-net cassandra`
+       
+**D.** `docker network start d-net`   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`docker run d-net cassandra`
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is A |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| Create a Docker network with the `docker network create` command and use the `--network` switch when running the container to use the named network.|
 </p>
 </details>
 
@@ -148,12 +162,23 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 7.
 
+How do clients authenticate to the Stargate Auth API using Table-based authentication/authorization?
+
+**A.** username and password
+
+**B.** two-way SSL/TLS
+
+**C.** SAML token
+ 
+**D.** JWT
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is A |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| Table-based authentication and authorization uses the Stargate Auth API to generate an auth token based on a Cassandra username and password. The auth-table-based-service uses the generated auth token to allow Stargate API queries access to the Cassandra data. JWT-based authentication and authorization is an *alternative* to Table-based authentication and authorization. Stargate does not support authentication through two-way SSL/TLS or SAML.
+ |
 </p>
 </details>
 
@@ -161,12 +186,22 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 8.
 
+How does Prometheus communicate with Cassandra?
+
+**A.** JMX
+
+**B.** SNMP
+
+**C.** TLS
+
+**D.** UDP
+
 <details><summary>Click to view the correct answer</summary>
 <p>
-    
-| The correct answer is ZZZ |
+   
+| The correct answer is A |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| Java Management Extensions (JMX) is the native management protocol for Java applications and the JVM. Prometheus uses JMX to monitor Cassandra. |
 </p>
 </details>
 
@@ -174,12 +209,22 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 9.
 
+Given that a Docker container named `Main01` was started with the journald logging driver, which Docker command can be used to view its logs?
+
+**A.** `docker logs -f Main01`
+
+**B.** `docker cat -f logs --name Main01`
+
+**C.** `docker logs --name Main01`
+
+**D.** `docker cat -f Main01`
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is A |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| The command `docker logs -f <container-name>`  displays log files for a container. |
 </p>
 </details>
 
@@ -187,12 +232,22 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 10.
 
+Which two commands can re-start a stopped Docker container named NodeZ? (Choose two.)
+
+**A.** `docker run NodeZ`
+
+**B.** `docker restart NodeZ`
+
+**C.** `docker resume NodeZ`
+
+**D.** `docker start NodeZ`
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answers are B and D |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| The commands `docker restart` and `docker start` can *re-start* a stopped container. `docker run` creates a new container and there is no `docker resume` command. |
 </p>
 </details>
 
@@ -200,12 +255,23 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 11.
 
+Which is an advantage of using Reaper over nodetool to perform repairs?
+
+**A.** Reaper can do incremental repairs.
+
+**B.**  Reaper can do full repairs.
+
+**C.**  Reaper can repair data when nodes are down.
+
+**D.**  Reaper can schedule repairs.
+
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is D |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| Reaper and nodetool can both initiate incremental and full repairs. Neither tool can do a repair on a downed node. A big advantage of Reaper is that it can schedule repairs. |
 </p>
 </details>
 
@@ -213,12 +279,22 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 12.
 
+Which tool installs K8ssandra?
+
+**A.** RPM
+
+**B.**  YUM
+
+**C.**  Helm
+
+**D.**  apt-get
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is C |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| K8ssandra is a Kubernetes application so it is installed using a Helm chart. |
 </p>
 </details>
 
@@ -226,12 +302,37 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 13.
 
+Consider the following service manifest:
+
+```
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+```
+Which is a valid statement about `my-service`?
+
+**A** The service makes `my-app` available outside the Kubernetes cluster on port 80.
+
+**B** The service makes `my-app` available outside the Kubernetes cluster on port 8080.
+
+**C** The service makes `my-app` available inside the Kubernetes cluster on port 80.
+
+**D** The service makes `my-app` available inside the Kubernetes cluster on port 8080.
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is C |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| This service manifest exposes `my-app` outside the cluster. The internal port is 8080 and the external port is 80. |
 </p>
 </details>
 
@@ -239,12 +340,22 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 14.
 
+In K8ssandra, how does Grafana collect Cassandra metrics.
+
+**A.** Grafana connects directly to Cassandra.
+
+**B.** Grafana gets Cassandra metrics from Medusa.
+
+**C.** Grafana gets Cassandra metrics from Reaper.
+
+**D.** Grafana gets Cassandra metrics from Prometheus.
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is D |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| Prometheus is the K8ssandra component that monitors Cassandra. Grafana gets metrics from Prometheus. |
 </p>
 </details>
 
@@ -252,12 +363,32 @@ Which three are features of Medusa? (Choose three)
 
 ### Question 15.
 
+Given the output from this command: (You may need to scroll left/right to see the entire output.)
+
+```
+% kubectl get pods
+NAME                                           READY STATUS   RESTARTS AGE
+some-really-really-long-meaningless-pod-name-0 2/2   Running  0        2m34s
+some-really-really-long-meaningless-pod-name-1 0/2   Running  0        2m34s
+some-really-really-long-meaningless-pod-name-2 1/2   Running  0        2m34s
+```
+
+Which is a valid statement about `some-really-really-long-meaningless-pod-name-2`?
+
+**A.** The pod and all its containers are running.
+
+**B.** The pod and one of its containers are running.
+
+**C.** The pod and its container are in stage 1 of the initialization process.
+
+**D.** The pod is running and its container is in stage 1 of the initialization process.
+
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is ZZZ |
+| The correct answer is B |
 |:---|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
+| In this example the pod’s status is `Running`. Looking at the Ready column, the pod has two containers and one is ready (running.) |
 </p>
 </details>
 
