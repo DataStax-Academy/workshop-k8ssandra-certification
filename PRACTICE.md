@@ -19,6 +19,7 @@ This section will run you through a set of practice exam questions.  These pract
 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip |
 </p>
 </details>
+
 [⬆️ Top](#sample-questions)
 
 ### Question 2.
